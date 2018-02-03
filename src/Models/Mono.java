@@ -7,9 +7,9 @@ public class Mono {
 		super();
 		this.listaLetra = new ListaLetra();
 	}
-	
+
 	public Character pulsarTecla() {
 		return listaLetra.getRandom();
 	}
-	
+
 }

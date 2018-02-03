@@ -58,15 +58,15 @@ public class ListaLetra extends TreeMap<Float, Character> {
 
 	public Character getRandom() {
 		Random rand = new Random();
-		float aleatorio = rand.nextFloat()*100;
-		for (Map.Entry<Float, Character> entry: super.entrySet()) {
-			if(entry.getKey()>=aleatorio) {
+		float aleatorio = rand.nextFloat() * 100;
+		for (Map.Entry<Float, Character> entry : super.entrySet()) {
+			if (entry.getKey() >= aleatorio) {
 				return entry.getValue();
 			}
 		}
 		return null;
 	}
-	
+
 	@Override
 	public String toString() {
 		return super.toString();
